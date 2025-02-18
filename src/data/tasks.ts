@@ -1,5 +1,3 @@
-
-// this contains the data for the task that will be assigned at random
 export const bingoTasks = [
   {
     id: 1,

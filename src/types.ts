@@ -17,6 +17,8 @@ export interface CompletedTask {
   proof: string;
   timestamp: number;
   status: 'pending' | 'approved' | 'rejected';
+  userId: string;
+  userName: string;
 }
 
 export type BingoLine = {
@@ -24,3 +26,9 @@ export type BingoLine = {
   index?: number; // For rows and columns
   direction?: 'left' | 'right'; // For diagonals
 };
+
+export interface User {
+  id: string;
+  name: string;
+  isModerator: boolean;
+}
